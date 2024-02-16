@@ -11,7 +11,7 @@ jmp start_switch
 start_switch:
 [bits 32]
 call switch_pm
-back:
+pm_begin:
 	mov ebx, TESTMSG
 	jmp print_string_32
     jmp $

@@ -27,4 +27,4 @@ GDT_descriptor:
     dw GDT_end - GDT_start - 1
     dd GDT_start
 
-DATA_LOW_BASE equ 0x6000
+DATA_LOW_BASE equ 0x0000

@@ -1,4 +1,4 @@
-print:
+print_string:
 	pusha
 start:
 	mov al, [bx]
