@@ -7,15 +7,15 @@ disk_load:
 
 	mov ah, 0x02
 	mov al, dh	; dh is the sector number will be read
-	mov ch, 0x0
-	mov cl, 0x02
+	mov ch, 0x0	; cylinder
+	mov cl, 0x02	; sector number
 	push dx 
-	mov dh, 0x0
-	;mov dl, 0x80 ;boot driver set by default
+	mov dh, 0x0		; head number
+	mov dl, 0x80 ;boot driver set by default
 	int 0x13
 
 	jc disk_error
-	cmp ah, 0x00
+	cmp ah, 0x00	; return code 0x0 means success
 	jne disk_error
 	
 	pop dx
