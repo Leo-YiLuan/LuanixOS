@@ -1,5 +1,4 @@
 [org 0x7c00]
-
 KERNEL_OFFSET equ 0x1000
 
 mov [BOOT_DRIVE], dl
@@ -33,6 +32,7 @@ load_kernel:
 	ret
 
 [bits 32]
+;[extern main]
 pm_begin:
 	mov ebx, MSG_PROT_MODE
 	call print_string_32
