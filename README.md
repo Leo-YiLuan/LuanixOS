@@ -13,3 +13,4 @@ This is a personal project that builds an x86_32 operating system from scratch.
 - [x] Kernel Code Setup and Successfully Loaded to Memory.
 - [x] Print from Kernel Using VGA (Direct Set Memory 0xB8000).
 - [ ] Screen (VGA) I/O Driver.
+- [ ] Keyboard Driver
